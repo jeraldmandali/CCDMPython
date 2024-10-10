@@ -1,0 +1,37 @@
+import MySQLdb
+
+#Create a connection
+myconnection = MySQLdb.Connection(host = "localhost",user = "root", password = "ceit")
+
+#Create a cursor object used tob hold connection
+mycursor = myconnection.cursor()
+
+#now let's start with SQL queries
+#mycursor.execute('CREATE DATABASE CEITLIBRARY')
+mycursor.execute('USE CEITLIBRARY')
+tablebook = """CREATE TABLE book(bookID int primary key,title varchar(20),author varchar(20),genre varchar(20))"""
+
+Reader = """CREATE TABLE raeder(readerID int primary key,rname varchar(20),phone varchar(10), BookID int)"""
+
+book1 = """INSERT INTO book VALUES(101,"Intro to Python","Tom Jerry","Programming")"""
+reader1 = """INSERT INTO raeder VALUES(1,"Josh Morrison","324256",4)"""
+# ReaderID 201, reader name Peter Parker
+#phone 3267424 , BookID 101
+
+#to execute tablebook
+#mycursor.execute(tablebook)
+#mycursor.execute(Reader)
+mycursor.execute(reader1)
+#mycursor.execute('SHOW DATABASES')
+
+#To fetch data and display output
+result = mycursor.fetchall()
+
+#commit changes
+myconnection.commit()
+
+for row in result:
+    print(row)
+
+
+

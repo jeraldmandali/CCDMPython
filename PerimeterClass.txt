@@ -1,0 +1,34 @@
+import math
+class perimeter:
+    def __init__(self):l
+       self.length = l
+       self.width = w
+       self.radius = r
+       self.perimeter = a
+
+
+    def_init_(self,l,w,r,a):
+
+       self.length = l
+       self.width = w
+       self.radius = r
+       self.perimeter = a
+
+    def PerimeterofRectangle(self):
+       perimeter = (self.2*length) + (self.2*width)
+       print ("Perimeter of Rectangle:",perimeter,"m")
+
+    def circumferenceofcircle(self):
+        circumference = (self.2*math.pi)*self.radius
+        print ("Circumference of Circle:",perimeter,"m")
+
+    def PerimeterofEqualateralTriangle(self):
+       Perimeter = 3*a
+       print ("Perimeter of EqualateralTriangle:",perimeter,"inch")
+
+    
+    
+
+
+    
+

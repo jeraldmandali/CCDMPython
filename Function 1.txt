@@ -1,0 +1,12 @@
+#Fubction to get Area of Rectangle 
+
+#Defining the Function
+def AreaOfRectangle():
+    length = int(input("Enter length:\n"))
+    width = int(input("Enter width:\n"))
+    area = length*width
+    print("Area of Rectangle is:" + arae + "cm squared")
+
+    #outside of function
+    #Here, we CALL the function
+    AreaOfRectangle()

@@ -1,0 +1,23 @@
+from Test1 import perimeter 
+
+choice = int(input("Enter 1,2 or 3 to calculate the following:\n1 for Rectangle\n2 for circle\n3 for Triangle\n"))
+
+if choice == 1:
+    
+    l = int(input("Enter length: \n"))
+    w = int(input("Enter width;\n"))
+    RObj=perimeter(l,w,0,0)
+    RObj.PerimeterofRectangle()
+
+elif choice == 2:
+    r = int(input("Enter Radius"))
+    CObj= perimeter(0,0,r,0)
+    CObj.circumferenceofcircle()
+
+elif choice == 3:
+    a = int(input("Enter side:\n"))  
+    EObj = perimeter(0,0,0,a)
+    EObj.PerimeterofaEqualateralTriangle()
+
+else:
+    print("Invalid Choice")
